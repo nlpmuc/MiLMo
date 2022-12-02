@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--[if lte IE 8]> <html class="oldie" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="format-detection" content="telephone=no">
+	<title>MiLMo</title>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/all.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+		.merge_first{
+			white-space: normal;
+			border-right: 2px solid #8d8b8b;
+		}
+		.merge_td{
+			white-space: normal;
+			border-right: 2px solid #8d8b8b;
+			border-top: 2px solid #8d8b8b;
+		}
+		.merge_td_second{
+			/* border-left: 2px solid #0a0909; */
+			border-top: 2px solid #8d8b8b;
+		}
+		.merge_td_third{
+			border-top: 2px solid #8d8b8b;
+		}
+		.extra{
+			color:#A8A8A8;
+		}
+		/* .other_td_first{
+			border-left: 2px solid #0a0909;
+		} */
+		a{
+      text-decoration:none;
+      color:black;
+      font-weight:bold;
+  }
+	
+
+		#pageStyle{  
+    display:inline-block;  
+    width:32px;  
+    height:32px;  
+    border:1px solid #CCC;  
+    line-height:32px;  
+    text-align:center;  
+    color:#999;  
+    margin-top:20px;  
+    text-decoration:none;  
+ 
+    }  
+ #pageStyle:hover{  
+     background-color:#CCC;  
+     }  
+ #pageStyle .active{  
+     background-color:#0CF;  
+     color:#ffffff;  
+     }        
+    .style1
+    {
+        font-size: 12pt;
+    }
+    </style>
+	<style type="text/css">
+		table{
+			text-align: center;
+		}
+		td{
+			color: black;
+		}
+	</style>
+
+  <style type="text/css">
+     button {  
+        width: 300px;  
+        padding:8px;  
+        background-color: #428bca;  
+        border-color: #357ebd;  
+        color: #6E6E6E;  
+        -moz-border-radius: 10px;  
+        -webkit-border-radius: 10px;  
+        border-radius: 10px; /* future proofing */  
+        -khtml-border-radius: 10px; /* for old Konqueror browsers */  
+        text-align: center;  
+        vertical-align: middle;  
+        border: 1px solid transparent;  
+        font-weight: 900;  
+        font-size:125%  
+      }  
+   </style>
+</head>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<body>
+	<div id="wrapper">
+		<div class="wrapper-holder">
+			<header id="header">
+				<h1 class="logo" style="height: 50px;width:500px;float: right;padding: 50px 70px">MiLMo:Minority Multilingual <br><br><br>Pre-trained Language Model</h1>
+				<img src="images/title.jpg" width="100" height="95" style="border-radius: 50%;padding: 10px">
+				
+				<h2 class="slogan">CMLI Research Center<br/>Minzu University of China</h2>
+				<!-- <h2 class="slogan">Minzu University of China</h2> -->
+			</header>
+		</div>
+		<div class="wrapper-holder grey">
+			<section id="main">
+
+			  <div class="box_timeline_holder">
+				  <div class="box_timeline">
+						<ul>
+							<li>
+								<!--div class="date">
+									<span>01</span>
+								</div-->
+								<h3 style="padding: 20px 5px 0 0">MiLMo</h3>
+								<p align="justify">We construct a multilingual pre-trained model named MiLMo that performs better on minority language tasks, including Mongolian, Tibetan, Uyghur, Kazakh and Korean. To solve the problem of scarcity of datasets on minority languages and verify the effectiveness of the MiLMo model, we construct a minority multilingual text classification dataset named MiTC, and trains a word2vec model for each language. By comparing the word2vec model and the pre-trained model in the text classification task, we provide an optimal scheme for the downstream task research of minority languages.</p>
+							<!-- </li> -->
+
+							<!-- <li> -->
+								<!--div class="date">
+									<span>02</span>
+								</div-->
+								<h3 style="padding: 0">Contributions</h3>
+								<p align="justify">(1) We construct a pre-trained model MiLMo containing five minority languages, including Mongolian, Tibetan, Uygur, Kazakh and Korean, to provide support for various downstream tasks of minority languages.</p>
+<p align="justify">(2) We train a word2vec representation for five languages, including Mongolian, Tibetan, Uygur, Kazakh and Korean. Comparing the word2vec representation and the pre-trained model in the downstream task of text classification, we provide the best scheme for the research of downstream task of minority languages. The experimental results show that MiLMo model outperforms the word2vec representation.</p>
+<p align="justify">(3) To solve the problem of scarcity of minority language datasets, we construct a classification dataset MiTC containing five languages, including Mongolian, Tibetan, Uyghur, Kazakh and Korean, and publishes the word2vec representation, multilingual pre-trained model Mi XLM and multilingual classification dataset MiTC.</p>
+							<!-- </li> -->
+
+							<!-- <li> -->
+								<!--div class="date">
+									<span>03</span>
+								</div-->
+								
+							</li><br/><br/><br/>
+						</ul>
+					</div>
+				  <div class="box_timeline" style="width: 66%"><ul><li>
+<!--					  <div style="padding: 30px 20px 10px 0">We conduct text classification experiments on the Tibetan News Classification Corpus (TCNNÔºöhttps://github.com/FudanNLP/Tibetan-Classification) which released by the Natural Language Processing Laboratory of Fudan University for text classification.</div>-->
+						<div style="padding: 20px 5px 0 0"><h3 style="padding: 0">Experimental Result:</h3></div>
+					  <div><p align="justify">We obtain the training data of five minority languages, including Mongolian, Tibetan, Uyghur,
+Kazakh and Korean, The word segmentation results of the five languages are shown in Table 1.</p></div>
+					  
+				<div align="center" style="font-size: 16px">Table 1: The results of word segmentation in each minority language.</div>
+						<div align="center">
+						<img src="images/MiLMo.png" width="560px" height="358px" alt="The results of word segmentation in each minority language.">
+							
+						</div>
+						<br>
+				<div><p align="justify">We use MiLMo for the downstream experiment of text classification on MiTC.</p></div>
+					  
+				<div align="center" style="font-size: 16px">The performances of MiLMo on text classification</div>
+						<div align="center">
+						<img src="images/milmo1.png" width="560px" height="358px" alt="The results of word segmentation in each minority language.">
+							
+						</div>
+						<h3 style="padding: 30px 0 0 0">Contact us</h3>
+								<p>Tel: 18811388681<br>Email: TibetanQA_Office@163.com</p>
+						</div>
+					  </div></li></ul></div>
+				</div>
+			</section>
+			
+		</div>
+
+			
+	</div>
+	
+	
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/cells-by-row.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	
+ 
+<div class="mask" style="display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,.8)"></div>
+<div class="modal" style="display: none; transform: translate(-50%, -50%); left: 50%; top: 50%; position: fixed; width: 600px; height: 600px; background-color:#B3B3B3;">
+	<div style="padding: 5px 5px 5px 5px;"><button class="close-modal" style="float: right;"><font size="5px"> &nbsp;√ó&nbsp;</font></button></div>
+	<form action="download.php" method="post">
+	<div align="center">
+			<br/><br/><h1>Please Fill in Relevant Information</h1><br/> 
+
+			<label style="display: inline-block;min-width: 130px;">
+				Name</label><input type="text" name="name"  onFocus="this.value=''" required="required">
+			
+			<br/>
+			<label style="display: inline-block;min-width: 130px;">
+				Phone</label><input name="phone" pattern="^1\d{10}$" required="required" type="text" />
+			<br/>
+			<label style="display: inline-block;min-width: 130px;">
+				E-mail</label><input type="email" name="email" onFocus="this.value=''" required="required">
+			<br/>
+		<label style="display: inline-block;min-width: 130px;">
+				Organization</label><input type="text" name="organize" onFocus="this.value=''" required="required">
+			<br/><br/>
+		<div><iframe scrolling="auto" frameborder='0' name="mymain" src="deal_En.html" width="100%" height="300px"></iframe></div>
+			<div align="center">
+				<input type="checkBox" onclick="if (this.checked) {enable()} else {disable()}">I confirm the authenticity of the information provided and agree to the <a href="deal.html" style="color: blue" target="_blank">data download agreement</a>
+				
+<br/>
+				
+				<input style="width: 100px;height: 30px;border-radius: 5px" type="submit" id="accept" disabled="true" value="DOWNLOAD">
+			</div>
+	</div><!--login_boder end -->
+	</form>
+</div>
+	<div style="background-color: #7B7B7B;height:30px" align="center"><a href="http://beian.miit.gov.cn/"><font color="white">‰∫¨ICPÂ§?021036863Âè</font></a></div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+var mask = document.querySelector('.mask')
+var modal = document.querySelector('.modal')
+var open = document.getElementById("jjjj")
+var close = document.querySelector('.close-modal')
+open.addEventListener('click', function(e) {
+mask.style.display = 'block'
+modal.style.display = 'block'
+})
+close.addEventListener('click', function(e) {
+mask.style.display = 'none'
+modal.style.display = 'none'
+})
+})
+</script>
+	
+</body>
+</html>
+<script type="text/javascript" >
+function disable()
+  {
+  document.getElementById("accept").disabled=true
+  }
+function enable()
+  {
+  document.getElementById("accept").disabled=false
+  }
+
+</script>
